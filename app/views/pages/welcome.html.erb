@@ -11,3 +11,14 @@
 
 </div>
 
+<br><br><hr>
+
+<!-- show post stream in this welcome page -->
+<% @posts.each do |post| %>
+	<!-- render post partial -->
+	<%= render 'posts/post', post: post %>
+
+	<!-- add spacing between posts -->
+	<br><br><br>
+<% end %>
+
