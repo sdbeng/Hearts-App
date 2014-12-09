@@ -4,7 +4,15 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+group :development :test do
+	gem 'sqlite3'
+end
+
+#heroku production
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+end
 
 #Use Bootstrap
 gem 'bootstrap-sass', '~> 3.2.0'
