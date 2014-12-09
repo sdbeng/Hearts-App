@@ -1,4 +1,4 @@
-Heart App - Ruby and Rails Project
+Hearts App - Ruby and Rails Project
 
 -----
 By Serg
